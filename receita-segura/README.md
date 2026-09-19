@@ -40,17 +40,24 @@ Não há `package.json`, bundler nem etapa de build.
 **Requisitos:** um navegador moderno (Chrome, Edge, Firefox ou Safari atuais). Para o modo recomendado, Python 3 **ou** Node.js.
 
 ```bash
-# 1. Clone o repositório
-git clone <https://github.com/Caliel1/Receita-Segura-Front> receita-segura
-cd receita-segura
+1. Baixe o projeto
+bash
+git clone https://github.com/Caliel1/Receita-Segura-Front.git
+2. Rode (escolha uma opção)
 
-# 2. Sirva a pasta com qualquer servidor estático (escolha um)
-python3 -m http.server 5500
-# ou
-npx serve .
+Opção A: Live Server (VS Code) — recomendada
 
-# 3. Abra no navegador
-# http://localhost:5500
+No VS Code, instale a extensão Live Server (autor: Ritwick Dey) na aba de extensões.
+Abra a pasta Receita-Segura-Front/receita-segura (File → Open Folder, a pasta que contém o index.html).
+Clique com o botão direito no index.html e escolha Open with Live Server (ou clique em Go Live, no canto inferior direito).
+O navegador abre em http://127.0.0.1:5500 e recarrega sozinho a cada alteração salva.
+
+Opção B: terminal (sem VS Code)
+
+bash
+cd Receita-Segura-Front/receita-segura
+python3 -m http.server 5500   # ou: npx serve .
+# depois abra http://localhost:5500 no navegador
 ```
 
 Também funciona abrindo o `index.html` direto no navegador. Prefira o servidor local: a Web Crypto API (usada para gerar o hash da receita) exige *contexto seguro*, e `localhost` conta como seguro.
