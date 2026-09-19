@@ -145,7 +145,7 @@ Tudo está em `js/script.js`, na ordem abaixo.
 
 ## Documentação de UI
 
-| Seção de [docs/documentacao-ui.md](receita-segura/docs/documentacao-ui.md) | Conteúdo |
+| Seção de [docs/documentacao-ui.md](docs/documentacao-ui.md) | Conteúdo |
 | --- | --- |
 | 1. Design tokens | Paleta com hex, tipografia, espaçamento, raios, sombras, breakpoints e contraste |
 | 2. Componentes | Botão, Campo de formulário e Modal: API, estados, exemplos e acessibilidade |
